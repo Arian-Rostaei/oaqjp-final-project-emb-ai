@@ -2,7 +2,6 @@ import json
 import requests
 
 def emotion_detector(text_to_analyze):
-    # مدیریت خطای 400 برای ورودی خالی
     if not text_to_analyze or text_to_analyze.strip() == "":
         return {
             'document': None, 'anger': None, 'disgust': None, 'fear': None,
